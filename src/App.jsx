@@ -31,7 +31,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<h1>Личный кабинет выбирайте из пунктов</h1>}
+            element={<h1>Личный кабинет из пунктов</h1>}
           />
           <Route path="/profile" element={<Profile />} />
           <Route path="/messages" element={<Messages />} />
