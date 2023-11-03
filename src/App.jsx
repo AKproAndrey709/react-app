@@ -1,11 +1,9 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Profile } from "./components/Profile";
 
-const Profile = () => {
-  return <h1>Это страница Профиля</h1>;
-};
 const Messages = () => {
-  return <h1>Страница с сообщениями</h1>;
+  return <h1>Страница с Сообщениями</h1>;
 };
 const Friends = () => {
   return <h1>Страница с Друзьями</h1>;
@@ -29,10 +27,7 @@ function App() {
       </div>
       <div className="col-9">
         <Routes>
-          <Route
-            path="/"
-            element={<h1>Личный кабинет из пунктов</h1>}
-          />
+          <Route path="/" element={<h1>Личный кабинет из пунктов</h1>} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/friends" element={<Friends />} />
