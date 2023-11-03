@@ -4,7 +4,7 @@ import { Profile } from "./components/Profile";
 import { Messages } from "./components/Messages";
 import { Friends } from "./components/Friends";
 
-function App() {
+function App(props) {
 	return (
 		<div className="container">
 			<div className="row">
@@ -24,9 +24,9 @@ function App() {
 				<div className="col-9">
 					<Routes>
 						<Route path="/" element={<h1>Личный кабинет из пунктов</h1>} />
-						<Route path="/profile" element={<Profile />} />
+						<Route path="/profile" element={<Profile function={props.function.key_getUser} />} />
 						<Route path="/messages" element={<Messages />} />
-						<Route path="/friends" element={<Friends />} />
+						<Route path="/friends" element={<Friends function={props.function.key_getUsers} />} />
 					</Routes>
 				</div>
 			</div>
