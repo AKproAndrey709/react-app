@@ -11,7 +11,7 @@ export const Profile = (props) => {
 			</div>
 			<div className="col-md-8">
 				<h3 className={styles.name}>Фамили и имя: <span>{user.name} {user.lastname}</span></h3>
-				<p className={styles.id} style={{ fontWeight: 700, backgroundColor: "greenyellow" }}>Id: <span>{user.id}</span></p>
+				<p className={styles.id} >Id: <span>{user.id}</span></p>
 				<p className={styles.mail}>Email: <span>{user.email}</span></p>
 			</div>
 		</div>
