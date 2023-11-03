@@ -9,7 +9,7 @@ export const Profile = () => {
 			</div>
 			<div className="col-md-8">
 				<h3 className={styles.name}>Фамили и имя: <span>Василий Катков</span></h3>
-				<p className={styles.id}>Id: <span>1</span></p>
+				<p className={styles.id} style={{ fontWeight: 700, backgroundColor: "greenyellow" }}>Id: <span>1</span></p>
 				<p className={styles.mail}>Email: <span>vasya@mail.ru</span></p>
 			</div>
 		</div>
