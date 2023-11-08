@@ -16,7 +16,7 @@ const TableRow = (props) => {
 		</tr>
 	);
 };
-class Friends extends React.Component {
+export class Friends extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { userRow: [] };
