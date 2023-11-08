@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 const TableRow = (props) => {
@@ -9,9 +10,28 @@ const TableRow = (props) => {
 		</tr>
 	)
 }
+class Friends extends React.Component {
+	render() {
+		return (
+			<>
+				<h1>Страница с Друзьями</h1>
+				<table className="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Фамилия и имя</th>
+							<th scope="col">Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						{userRow}
+					</tbody>
+				</table>
+			</>);
+	}
+}
 
 export const Friends = (props) => {
-
 	let users = props.function();
 	console.log(users);
 	let userCount = Object.keys(users).length;
@@ -19,17 +39,4 @@ export const Friends = (props) => {
 	for (let i = 0; i < userCount; i++) {
 		userRow.push(<TableRow index={i} id={users[i].id} name={users[i].name} lastname={users[i].lastname} key={i} email={users[i].email} />)
 	}
-	return (
-		<table className="table">
-			<thead>
-				<tr>
-					<th scope="col">#</th>
-					<th scope="col">Фамилия и имя</th>
-					<th scope="col">Email</th>
-				</tr>
-			</thead>
-			<tbody>
-				{userRow}
-			</tbody>
-		</table>);
 };
