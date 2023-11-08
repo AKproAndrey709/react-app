@@ -46,7 +46,7 @@ export class Friends extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Страница с Друзьями</h1>
+				<h1>Список из БД</h1>
 				<table className="table">
 					<thead>
 						<tr>

@@ -19,7 +19,7 @@ export const Advice = () => {
 		fetchData();
 	}, [])
 	return (
-		<div className="container-fluid p-5 text-center">
+		<div className="container-fluid p-5 text-center text-red-900 text-4xl">
 			{advice}
 		</div>
 	)
